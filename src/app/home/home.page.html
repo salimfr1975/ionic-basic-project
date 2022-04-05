@@ -1,0 +1,68 @@
+<ion-content>
+  <div id="container">
+    <ion-card>
+    <ion-card-header>
+      <img src="assets/images/security.png" style="height:100px">
+      <ion-input placeholder="Entree Votre Password" type="password" id="user-input">
+
+      </ion-input>
+      <ion-button color="danger" expand="full" id="set-btn">
+        <ion-icon name="key" slot="start">
+         
+        </ion-icon>
+        <ion-label>
+          Définir le mot de passe
+        </ion-label>
+      </ion-button>
+      <ion-button color="success" expand="full" id="access-btn" style="display:none">
+        <ion-icon name="key" slot="start">
+         
+        </ion-icon>
+        <ion-label>
+          Accéder
+        </ion-label>
+      </ion-button>
+      <small id="password-empty-notice" style="color:red;display:none">Your password is empty</small>
+      <small id="password-wrong" style="color:red;display:none">Your password is wrong</small>
+    </ion-card-header>
+    </ion-card>
+  </div>
+  <div id="app" style="display:none">
+    <ion-card style="display:none" id="contact-form">
+      <ion-card-header>
+        <img src="assets/images/add.png" style="display:block;margin-left:auto;margin-right:auto;width:50%;">
+      <ion-input placeholder="Enter your Name" style="border-bottom:0.5px solid #ccc" 
+      class="ion-margin-bottom" id="contact-name">
+
+      </ion-input>
+      <ion-input placeholder="Enter your Adresse" style="border-bottom:0.5px solid #ccc" 
+      class="ion-margin-bottom" id="contact-adresse">
+
+      </ion-input>
+      <ion-input placeholder="Enter your Tel" style="border-bottom:0.5px solid #ccc" 
+      class="ion-margin-bottom" id="contact-tel">
+
+      </ion-input>
+      <ion-input placeholder="Enter your Email" style="border-bottom:0.5px solid #ccc" 
+      class="ion-margin-bottom" id="contact-email">
+
+      </ion-input>
+      </ion-card-header>
+    </ion-card>
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end" id="add-btn">
+      <ion-fab-button>
+        <ion-icon name="add">
+
+        </ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end" id="save-btn"style="display:none">
+     
+      <ion-fab-button color="danger">
+        <ion-icon name="save">
+
+        </ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+</ion-content>
